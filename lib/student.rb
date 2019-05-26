@@ -71,7 +71,7 @@ class Student
     SQL
     
     DB[:conn].execute(sql).map do |row|
-        self.newlearn _from_db(row)
+        self.new_from_db(row)
     end.first      
   end  
 
