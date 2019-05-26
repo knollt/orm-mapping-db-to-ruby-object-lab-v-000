@@ -31,8 +31,10 @@ class Student
   
   def self.count_grade_9 
     sql = <<-SQL
-      SELECT 
+      SELECT * FROM
+      WHERE grade = 9 
     SQL
+  end   
   
   def save
     sql = <<-SQL
