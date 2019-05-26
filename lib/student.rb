@@ -29,7 +29,10 @@ class Student
     end.first  
   end
   
-  def self.count_grade_9
+  def self.count_grade_9 
+    sql = <<-SQL
+      SELECT 
+    SQL
   
   def save
     sql = <<-SQL
