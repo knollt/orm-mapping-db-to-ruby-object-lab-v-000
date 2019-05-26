@@ -29,6 +29,8 @@ class Student
     end.first  
   end
   
+  def self.count_grade_9
+  
   def save
     sql = <<-SQL
       INSERT INTO students (name, grade) 
